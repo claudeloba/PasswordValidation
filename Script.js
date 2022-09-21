@@ -21,7 +21,7 @@ const check = () => {
   document.getElementById("password").value = input;
   document.getElementById("count").innerText = "Length : " + input.length;
 
-  if (input.length >= 5) {
+  if (input.length >= 8) {
     document.getElementById("check0").style.color = "green";
   } else {
     document.getElementById("check0").style.color = "red";
