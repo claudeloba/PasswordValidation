@@ -1,0 +1,22 @@
+{
+  "name": "passwordvalidation",
+  "version": "1.0.0",
+  "description": "Password validator",
+  "main": "Script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudeloba/PasswordValidation.git"
+  },
+  "author": "Claude-Marcel Loba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudeloba/PasswordValidation/issues"
+  },
+  "homepage": "https://github.com/claudeloba/PasswordValidation#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
