@@ -1,5 +1,8 @@
 let isVisible = false;
 
+const grandparent = document.querySelector(".check");
+const parent = Array.from(grandparent.children);
+
 let see = () => {
   let input = document.getElementById("password");
   let see = document.getElementById("see");
@@ -23,37 +26,37 @@ const check = () => {
 
 
   if (input.length >= 8) {
-    document.getElementById("check0").style.color = "green";
+    parent[0].style.color = "green";
     document.querySelector("#check0 span").innerText = "Password contains 8 characters";
   } else {
-    document.getElementById("check0").style.color = "red";
+    parent[0].style.color = "red";
     document.querySelector("#check0 span").innerText = "Password does not contain 8 characters";
   }
 
   if (input.match(/\d/)) {
-    document.getElementById("check1").style.color = "green";
+    parent[1].style.color = "green";
     document.querySelector("#check1 span").innerText = "Password contains a number";
   } else {
-    document.getElementById("check1").style.color = "red";
+    parent[1].style.color = "red";
     document.querySelector("#check1 span").innerText = "Password does not contain a number";
   }
 
   if (input.match(/[A-Z]/)) {
-    document.getElementById("check2").style.color = "green";
+    parent[2].style.color = "green";
     document.querySelector("#check2 span").innerText = "Password does contain a capital letter";
 
   } else {
-    document.getElementById("check2").style.color = "red";
+    parent[2].style.color = "red";
     document.querySelector("#check2 span").innerText = "Password does not contain a capital letter";
 
   }
 
   if (input.match(/[^A-Za-z0-9-''/i]/)) {
-    document.querySelector("#check3").style.color = "green";
+    parent[3].style.color = "green";
     document.querySelector("#check3 span").innerText = "Password does contain a special character";
 
   } else {
-    document.getElementById("check3").style.color = "red";
+    parent[3].style.color = "red";
     document.querySelector("#check3 span").innerText = "Password does not contain a special character";
 
   }
