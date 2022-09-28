@@ -1,5 +1,6 @@
 * {
 box-sizing: border-box;
+font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
@@ -21,10 +22,10 @@ body {
   border-radius: 10px;
 }
 
-h2 {
+h1 {
   margin: 10px 0px 0px 0px;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: #9e44c8;
 }
@@ -97,5 +98,5 @@ span {
 }
 
 input:hover {
-  border-bottom: 3px solid #560a70;
+  border-bottom: 0px solid #560a70;
 }

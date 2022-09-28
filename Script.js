@@ -27,37 +27,37 @@ const check = () => {
 
   if (input.length >= 8) {
     parent[0].style.color = "green";
-    document.querySelector("#check0 span").innerText = "Password contains 8 characters";
+    parent[0].querySelector("span").innerText = "Password contains 8 characters";
   } else {
     parent[0].style.color = "red";
-    document.querySelector("#check0 span").innerText = "Password does not contain 8 characters";
+    parent[0].querySelector("span").innerText = "Password does not contain 8 characters";
   }
 
   if (input.match(/\d/)) {
     parent[1].style.color = "green";
-    document.querySelector("#check1 span").innerText = "Password contains a number";
+    parent[1].querySelector("span").innerText = "Password contains a number";
   } else {
     parent[1].style.color = "red";
-    document.querySelector("#check1 span").innerText = "Password does not contain a number";
+    parent[1].querySelector("span").innerText = "Password does not contain a number";
   }
 
   if (input.match(/[A-Z]/)) {
     parent[2].style.color = "green";
-    document.querySelector("#check2 span").innerText = "Password does contain a capital letter";
+    parent[2].querySelector("span").innerText = "Password does contain a capital letter";
 
   } else {
     parent[2].style.color = "red";
-    document.querySelector("#check2 span").innerText = "Password does not contain a capital letter";
+    parent[2].querySelector("span").innerText = "Password does not contain a capital letter";
 
   }
 
   if (input.match(/[^A-Za-z0-9-''/i]/)) {
     parent[3].style.color = "green";
-    document.querySelector("#check3 span").innerText = "Password does contain a special character";
+    parent[3].querySelector("span").innerText = "Password does contain a special character";
 
   } else {
     parent[3].style.color = "red";
-    document.querySelector("#check3 span").innerText = "Password does not contain a special character";
+    parent[3].querySelector("span").innerText = "Password does not contain a special character";
 
   }
 }

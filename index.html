@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="Script.js" async defer></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header>
     </header>
     <section class="container">
-      <h2>Password Validation</h2>
+      <h1>Password Validation</h1>
 
       <input type="password" id="password" placeholder="Enter password..." oninput="check()">
       <div id="set"> 
@@ -28,16 +31,16 @@
       </div>
       <div class="check">
       <div id="check0">
-         <i class="far fa-check-circle"></i><span id="eight">Password does not contain 8 characters</span>
+         <i class="far fa-check-circle"></i><span>Password does not contain 8 characters</span>
       </div>
       <div id="check1">
-          <i class="far fa-check-circle"></i><span id="numbCheck">Password does not contain a number</span>
+          <i class="far fa-check-circle"></i><span>Password does not contain a number</span>
       </div>
       <div id="check2">
-          <i class="far fa-check-circle"></i><span id ="capital">Password does not contain a capital letter</span>
+          <i class="far fa-check-circle"></i><span>Password does not contain a capital letter</span>
       </div>
       <div id="check3">
-          <i class="far fa-check-circle"></i><span id ="special">Password does not contain a special character</span>
+          <i class="far fa-check-circle"></i><span>Password does not contain a special character</span>
       </div>
     </div>
     </section>
